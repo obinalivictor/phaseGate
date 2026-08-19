@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class SchoolGrade{
-	public static int grade(int scoreOne,int scoreTwo,int scoreThree){
+	public static String grade(int scoreOne,int scoreTwo,int scoreThree){
 	int sum = scoreOne + scoreTwo + scoreThree;
 	int averageScore = sum / 3;
 	
-	String letterGrade = "";
+	String letterGrade = "e";
 	
 	if(averageScore > 90 && averageScore <= 100)
 		letterGrade = "A";
@@ -18,7 +18,7 @@ public class SchoolGrade{
 	else if(averageScore >= 60 && averageScore <= 70)	
 		letterGrade = "D";	
 		
-	else 	
+	else if(averageScore < 60)	
 		letterGrade = "F";
 		
 		
@@ -43,7 +43,7 @@ int scoreTwo = input.nextInt();
 System.out.println("enter score");
 int scoreThree = input.nextInt();
 
-Grade = grade(scoreOne, scoreTwo, scoreThree);
+String Grade = grade(scoreOne, scoreTwo, scoreThree);
 
 System.out.println("grade is:" + Grade);
 
