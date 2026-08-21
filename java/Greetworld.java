@@ -1,0 +1,15 @@
+public class GreetWorld{
+	public static void main(String [] args){
+	
+	//String word = ""Hello,World""
+	
+	System.out.println("\"Hello,World\"");
+	System.out.println("\"Hello,World\"");
+	System.out.println("\"Hello,World\"");	
+	System.out.println("\"Hello,World\"");	
+	System.out.println("\"Hello,World\"");	
+	
+	
+	
+	}
+}

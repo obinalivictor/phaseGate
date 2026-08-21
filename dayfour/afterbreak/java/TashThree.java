@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class TaskOne{
+	public static void main(String [] args){
+	Scanner input = new Scanner (System.in);
+	
+	
+	int average = 0;
+	int length = 0;
+	int sum = 0;
+	for(int count = 1 ; count <= 10; count++){
+	System.out.println("enter score: ");
+	int Score = input.nextInt();
+	
+	sum =sum + Score;
+	 length++;
+	}
+	average = sum / length;
+	System.out.println("the average of ten scores is: "+ average);
+	System.out.println("the sum of ten scores is: "+ sum);
+	
+	}
+}
